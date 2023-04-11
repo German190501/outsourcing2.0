@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect("localhost","root","","itoutsourcing");
+$connection = mysqli_connect("localhost", "root", "maquinaVirtual_2023@eder", "outsourcing");
 session_start();
 if(!empty($_SESSION['active'])){
     header('location: sistemaUser/home.php');

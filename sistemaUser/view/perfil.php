@@ -44,7 +44,7 @@ if (empty($_SESSION['active'])) {
         </nav>
     </header>
     <?php
-    $connection = mysqli_connect("localhost", "root", "", "itoutsourcing");
+    $connection = mysqli_connect("localhost", "root", "maquinaVirtual_2023@eder", "outsourcing");
     $id = $_GET['id'];
     if (isset($id)) {
         $query = mysqli_query($connection, "SELECT aspi.*, us.*, rol.*, ofert.*, emp.siglas, puesto.puesto FROM aspirantes aspi 

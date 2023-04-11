@@ -1,5 +1,5 @@
 <?php
-$conection = mysqli_connect("localhost","root","","itoutsourcing");
+$conection = mysqli_connect("localhost", "root", "maquinaVirtual_2023@eder", "outsourcing");
 	if(!empty($_POST))
 	{
 
