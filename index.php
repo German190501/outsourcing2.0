@@ -230,7 +230,7 @@
 	<script src="sistemaUser/resources/bootstrap/js/bootstrap.bundle.js"></script>
 	<script src="sistemaUser/resources/js/jquery-3.6.0.min.js"></script>
 	<script src="sistemaUser/resources/fontawesome/all.js"></script>
-	<!--<script src="https://kit.fontawesome.com/69562f358e.js" crossorigin="anonymous"></script>-->
+	<script src="https://kit.fontawesome.com/69562f358e.js" crossorigin="anonymous"></script>
 	<script>
         $(".navbar-collapse ul li a").on('click', function () {
             $(".navbar-collapse ul li a.active").removeClass('active');
