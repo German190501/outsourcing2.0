@@ -50,7 +50,7 @@ if (empty($_SESSION['active'])) {
 
     <script src="resources/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="resources/js/jquery-3.6.0.min.js"></script>
-    <script src="resources/fontawesome/all.js"></script>
+    <script src="https://kit.fontawesome.com/69562f358e.js" crossorigin="anonymous"></script>
     <script src="resources/js/functions.js"></script>
     <script>
         $(".navbar-collapse ul li a").on('click', function() {

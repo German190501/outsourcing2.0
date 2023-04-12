@@ -12,7 +12,6 @@ if (empty($_SESSION['active'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../resources/fontawesome/all.css">
     <link rel="stylesheet" href="../resources/css/estilos.css">
     <link rel="stylesheet" href="../resources/css/perfil.css">
     <title>ITO | Perfil</title>
@@ -222,7 +221,7 @@ if (empty($_SESSION['active'])) {
 
     <script src="../resources/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../resources/js/jquery-3.6.0.min.js"></script>
-    <script src="../resources/fontawesome/all.js"></script>
+    <script src="https://kit.fontawesome.com/69562f358e.js" crossorigin="anonymous"></script>
     <script src="../resources/js/functions.js"></script>
     <script>
         $(".navbar-collapse ul li a").on('click', function() {
