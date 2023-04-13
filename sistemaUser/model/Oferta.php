@@ -73,8 +73,7 @@ class Oferta{
     }
 
     public function mostraOferta(){
-        $registro = mysqli_query($this->conectarBD(), "SELECT of.*, emp.*, p.* FROM ofertas of INNER JOIN empresas emp ON of.empresa = emp.id_empresa
-        INNER JOIN puestos p ON of.puesto = p.id_puesto WHERE estatus = 'activa' ORDER BY folio ASC") or die("Problemas en el select".mysqli_error($this->conectarBD()));
+        $registro = mysqli_query($this->conectarBD(), "select off.*, empp.*, pp.* FROM ofertas off INNER JOIN empresas empp ON off.empresa = empp.id_empresa INNER JOIN puestos pp ON off.puesto = pp.id_puesto WHERE estatus = 'Activa'") or die("Problemas en el select".mysqli_error($this->conectarBD()));
         while($reg = mysqli_fetch_array($registro)){
             echo '<div class="col-md-4">';
             echo '<div class="card text-start">';
