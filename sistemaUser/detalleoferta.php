@@ -45,6 +45,7 @@ if (empty($_SESSION['active'])) {
     <div class="container-fluid" style="margin-top:80px">
         <?php
         $connection = mysqli_connect("localhost", "root", "maquinaVirtual_2023@eder", "outsourcing");
+        $id = $_GET['id'];
         if (isset($id)) {
             $query = mysqli_query($connection, "select off.*, empp.*, pp.* FROM ofertas off INNER JOIN empresas empp ON off.empresa = empp.id_empresa INNER JOIN puestos pp ON off.puesto = pp.id_puesto WHERE folio = '$id' AND estatus = 'Activa';");
 
