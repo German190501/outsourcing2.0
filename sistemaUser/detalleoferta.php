@@ -46,12 +46,7 @@ if (empty($_SESSION['active'])) {
         <?php
         $connection = mysqli_connect("localhost", "root", "maquinaVirtual_2023@eder", "outsourcing");
         if (isset($id)) {
-            $query = mysqli_query($connection, "SELECT of.*, emp.*, p.* 
-                                                    FROM ofertas of 
-                                                    INNER JOIN empresas emp ON of.empresa = emp.id_empresa
-                                                    INNER JOIN puestos p ON of.puesto = p.id_puesto 
-                                                    WHERE folio = '$id' AND estatus = 'activa' 
-                                                    ORDER BY folio ASC");
+            $query = mysqli_query($connection, "select off.*, empp.*, pp.* FROM ofertas off INNER JOIN empresas empp ON off.empresa = empp.id_empresa INNER JOIN puestos pp ON off.puesto = pp.id_puesto WHERE folio = '$id' AND estatus = 'Activa';");
 
             while ($row = mysqli_fetch_array($query)) {
         ?>
